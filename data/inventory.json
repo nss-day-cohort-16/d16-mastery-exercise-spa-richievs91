@@ -1,0 +1,43 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+
+	{
+	 "make": "Nissan",
+      "model": "Altima",
+      "year": "2012",
+      "price": "10000",
+      "description": "This is an immaculate 2012 Nissan Altima with only 30000 miles on it. Leather seats, power everything." 	
+	},
+
+	{
+	  "make": "Honda",
+      "model": "Civic",
+      "year": "2014",
+      "price": "15000",
+      "description": "This is an immaculate 2014 Honda Civic with only 15000 miles on it. Leather seats, power everything."
+	},
+
+	{
+	  "make": "Ford",
+      "model": "Fusion",
+      "year": "2014",
+      "price": "17000",
+      "description": "This is an immaculate 2014 Ford Fusion with only 12000 miles on it. Leather seats, power everything."
+	}
+]
+}
+
+
+
+
+
+
+
+
