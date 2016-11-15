@@ -4,26 +4,26 @@ var CarLot = (function () {
 var inventory = [];
 
   return {
-    loadInventory: function (callback) {
+    //It receives the function created in quiz.js as an argument
+    loadInventory: function (populatepagefromquiz) {
       var inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.open("GET", "data/inventory.json");
+      inventoryLoader.open("GET", 'data/inventory.json');
+      
       inventoryLoader.send();
-
       inventoryLoader.addEventListener("load", function () {
-      	inventory = JSON.parse(this.responseText).cars;
-      	callback(inventory);
-      	// console.log(inventory);
-      });
+      inventory = JSON.parse(this.responseText).cars;
+      populatepagefromquiz(inventory);
+
+  });
+  
     },
-    getInventory: function() {
-    	return inventory;
+   
+    getInventory: function () {
+      return inventory;
     }
   };
 
-})();
-
-
-// console.log("CarLot", CarLot);
+})(CarLot || {});
 
 
 
